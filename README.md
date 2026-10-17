@@ -180,10 +180,10 @@ $$L_k = B_k^T B_k + B_{k+1} B_{k+1}^T \in \mathbb{Z}^{|K_k| \times |K_k|}$$
 
 In exact rational arithmetic ($\mathbb{Q}$), intermediate determinant entries suffer from Hadamard bit-growth: $O(N \log(N \sqrt{N}))$. PLQ resolves this by mapping matrices into parallel finite Galois fields $\mathbb{F}_{p_m}$ for 64-bit primes $p_m \in (2^{62}, 2^{63})$:
 
-$$\operatorname{rank}_{\mathbb{Q}}(B_k) = \max_{m} \operatorname{rank}_{\mathbb{F}_{p_m}}(B_k \bmod p_m)$$
+$$\{rank}_{\mathbb{Q}}(B_k) = \max_{m} \{rank}_{\mathbb{F}_{p_m}}(B_k \bmod p_m)$$
 
 The 9 Betti numbers are evaluated in $O(N^2)$ without fraction growth:
-$$\beta_k = \dim(\ker L_k) = |K_k| - \operatorname{rank}(B_k) - \operatorname{rank}(B_{k+1})$$
+$$\beta_k = \dim(\ker L_k) = |K_k| - \{rank}(B_k) - \{rank}(B_{k+1})$$
 
 ---
 
@@ -211,7 +211,7 @@ PLQ integrates a first-principles mathematical implementation of all standard de
 4. **ProteinMPNN NLL Score:** $\text{Score}_{\text{MPNN}} = -\frac{1}{N} \sum_{i=1}^N \log P_\theta(s_i \mid \mathbf{X}, S_{<i})$.
 5. **Redesigned Score:** Evaluated strictly over mutable paratope/CDR indices $\mathcal{M}$.
 6. **Novelty Score:** $1 - \max_{\mathbf{Y} \in \mathcal{D}_{\text{PDB}}} \text{TM}(\mathbf{X}_{\text{query}}, \mathbf{Y})$.
-7. **TED Domain Confidence:** Normalized cut modularity on $C_\alpha$ contact graphs: $S_{\text{cut}} = \frac{\text{Cut}(\mathcal{A}, \mathcal{B})}{\operatorname{Vol}(\mathcal{A}) \operatorname{Vol}(\mathcal{B})}$.
+7. **TED Domain Confidence:** Normalized cut modularity on $C_\alpha$ contact graphs: $S_{\text{cut}} = \frac{\text{Cut}(\mathcal{A}, \mathcal{B})}{\{Vol}(\mathcal{A}) \{Vol}(\mathcal{B})}$.
 8. **DSSP Foldstring:** Kabsch-Sander electrostatic hydrogen-bond energy $E = 332 \times 0.42 \times 0.20 \left( \frac{1}{r_{ON}} + \frac{1}{r_{CH}} - \frac{1}{r_{OH}} - \frac{1}{r_{CN}} \right) < -0.5\text{ kcal/mol}$.
 9. **Exact Molecular Weight ($M_w$):** Isotopic sum accounting for $(N-1) \times 18.0152\text{ Da}$ condensation water loss.
 10. **Newton-Raphson Isoelectric Point ($\text{pI}$):** Solves the exact net charge root $Q(\mathrm{pH}) = 0$ with analytical negative derivative $Q'(\mathrm{pH}) < 0$ ensuring unconditional quadratic convergence ($|Q(\text{pI})| < 10^{-4}$).
@@ -225,14 +225,14 @@ Rather than evaluating fixed proteins post-hoc, PLQ inverts these metrics into a
 $$\mathcal{L}_{\text{total}} = w_1 \mathcal{L}_{\text{seq}} + w_2 \mathcal{L}_{\text{rec}} + w_3 \mathcal{L}_{\text{helix}} + w_4 \mathcal{L}_{\text{sheet}} + w_5 \mathcal{L}_{\text{nov}} + w_6 \mathcal{L}_{\text{pI}} + w_7 \mathcal{L}_{M_w} + w_8 \mathcal{L}_{\text{topo}}$$
 
 ### Continuous Langevin & Diffusion Sampling
-Coordinates $\mathbf{X}$ and sequence distributions $\boldsymbol{\pi} = \operatorname{softmax}(\mathbf{z} / \tau)$ are co-optimized iteratively:
+Coordinates $\mathbf{X}$ and sequence distributions $\boldsymbol{\pi} = \{softmax}(\mathbf{z} / \tau)$ are co-optimized iteratively:
 
 $$\mathbf{X}_{t-1} = \mathbf{X}_t - \gamma \nabla_{\mathbf{X}} \mathcal{L}_{\text{total}}(\mathbf{X}_t, \boldsymbol{\pi}_t) + \sqrt{2\gamma T} \, \boldsymbol{\epsilon}_t$$
 $$\mathbf{z}_{t-1} = \mathbf{z}_t - \eta \nabla_{\mathbf{z}} \mathcal{L}_{\text{total}}(\mathbf{X}_t, \boldsymbol{\pi}_t)$$
 
 - **Analytical Sequence Gradients:** $\nabla_{\mathbf{z}_i} \mathcal{L}_{\text{seq}}$, $\nabla_{\mathbf{z}_i} \mathcal{L}_{\text{pI}}$, $\nabla_{\mathbf{z}_i} \mathcal{L}_{M_w}$ derived through temperature softmax backpropagation.
 - **Analytical Coordinate Gradients:** $\nabla_{\mathbf{X}} \mathcal{L}_{\text{helix}}$ and $\nabla_{\mathbf{X}} \mathcal{L}_{\text{sheet}}$ derived from sigmoidal electrostatic distance thresholds.
-- **Topological Loss Coupling:** $\mathcal{L}_{\text{topo}} = \frac{1}{N}\operatorname{Tr}(\exp(-L_1 / \tau))$ steers 1-cell contacts directly toward homological closure ($\beta_1 \to 0$).
+- **Topological Loss Coupling:** $\mathcal{L}_{\text{topo}} = \frac{1}{N}\{Tr}(\exp(-L_1 / \tau))$ steers 1-cell contacts directly toward homological closure ($\beta_1 \to 0$).
 
 ---
 
@@ -328,7 +328,7 @@ This project is open-source and distributed under the terms of the **Creative Co
 ### Citation
 ```bibtex
 @software{plq_toposlang_2026,
-  author       = {Cloudhabil Research and Oulad Brahim, Elias},
+  author       = {Oulad Brahim, Elias},
   title        = {Pharmacological Lattice Quantization (PLQ) v3.0: 8D Hodge-Clifford Spatial Transformer and ToposLang Generative Platform},
   year         = {2026},
   publisher    = {GitHub},
@@ -341,7 +341,6 @@ This project is open-source and distributed under the terms of the **Creative Co
 ---
 
 <div align="center">
-  <b>Developed by Cloudhabil Research & Department of Advanced Agentic Computation</b><br/>
-  Berlin, Germany &bull; Universitat Oberta de Catalunya (UOC)<br/>
+  <b></b>1.Oulad Brahim E. Pharmacological Lattice Quantisation. Zenodo; 2026. doi:10.5281/zenodo.21205540<br/>
   Contact: <a href="mailto:obe@cloudhabil.com">obe@cloudhabil.com</a>
 </div>
