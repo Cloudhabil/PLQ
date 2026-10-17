@@ -1,0 +1,119 @@
+\documentclass[11pt, a4paper]{report}
+
+\usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{amsmath, amssymb, amsthm, mathtools}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{tikz-cd}
+\usepackage{hyperref}
+\usepackage{cite}
+\usepackage{microtype}
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue!70!black,
+    citecolor=blue!70!black,
+    urlcolor=blue!70!black,
+    pdftitle={The Topological Mechanics of Protein Recognition},
+    pdfauthor={Elias Oulad Brahim}
+}
+
+% Code Listing Settings
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.97,0.97,0.97}
+
+\lstdefinestyle{toposstyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen}\itshape,
+    keywordstyle=\color{magenta}\bfseries,
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\small,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=7pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    frame=single
+}
+\lstset{style=toposstyle}
+
+% Theorem Environments
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{axiom}{Axiom}[chapter]
+\newtheorem{example}{Example}[chapter]
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}[chapter]
+
+% Mathematical Macros
+\newcommand{\K}{\mathcal{K}}
+\newcommand{\cl}{\operatorname{cl}}
+\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\nullity}{\operatorname{nullity}}
+\newcommand{\kerop}{\operatorname{ker}}
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\betti}{\beta}
+\newcommand{\Cl}{\mathcal{C}\ell}
+\newcommand{\PGA}{\mathbb{R}^{3,0,1}}
+\newcommand{\CGA}{\mathbb{R}^{4,1,0}}
+\newcommand{\ToposLang}{\textbf{ToposLang}}
+\newcommand{\PLQ}{\textbf{PLQ}}
+\newcommand{\SeqID}{\operatorname{SeqID}}
+
+\title{\Huge \textbf{The Topological Mechanics of Protein Recognition}\\[1.5ex]
+\Large \textbf{A Monograph on Discrete Chain Complexes, Sheaf Cohomology, and Homological Phase Transitions in De Novo Therapeutics}}
+
+\author{
+    \textbf{Elias Oulad Brahim} \\
+    \textit{Cloudhabil, Berlin $\mid$ Universitat Oberta de Catalunya (UOC)} \\
+    \href{mailto:eouladbrahim@uoc.edu}{\texttt{eouladbrahim@uoc.edu}} $\mid$ \href{mailto:obe@cloudhabil.com}{\texttt{obe@cloudhabil.com}} \\
+    ORCID: \href{https://orcid.org/0009-0009-3302-9532}{0009-0009-3302-9532} $\mid$ \texttt{@Cloudhabil}
+}
+
+\date{October 2026 $\mid$ Berlin, Germany}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+For over three decades, computational protein design has treated molecular recognition through the lens of continuous Cartesian geometry ($\mathbb{R}^{3N}$) and statistical amino acid sequence distributions ($\Sigma^*$). While recent deep generative architectures have accelerated backbone hallucination, they remain fundamentally blind to the underlying algebraic topology of the binding manifold. Consequently, de novo antibody and biologic engineering suffers from severe framework entrapment: candidate paratopes rely on loop handles ($\beta_1 \ge 1$), which inevitably recapitulate canonical immunoglobulin germlines and fail server-side novelty standards ($>70\%$ sequence identity to existing biologics).
+
+In this monograph, we establish the foundational paradigm of \textbf{The Topological Mechanics of Protein Recognition}. By formulating protein interfaces as Directed Acyclic Cell Complexes (DACCs) where boundary nilpotency ($\partial_{k-1} \circ \partial_k \equiv 0$) is statically verified at compile time, we demonstrate that topological invariants govern the sequence orthogonality and physical realizability of de novo therapeutics. We prove the \textit{Topological Novelty Principle}: simply connected contact complexes ($\beta_1 = 0$) carve out regions of sequence space orthogonal to all known therapeutics ($\le 15\%$ identity), a property that is strictly invariant across both crowded autoimmune targets and orphan disease spaces. We further prove the \textit{Nilpotent Realizability Principle}, demonstrating that boundary nilpotency is a necessary physical embedding condition that determines tertiary foldability (100\% vs 0\% success rate). Furthermore, we formalize environmental responsiveness as a \textit{Homological Phase Transition}, identifying a discontinuous percolation threshold at $N_{\text{His}} \ge 4$ where discrete boundary rank collapse drives potent thermodynamic dissociation ($\Delta\Delta G \ge +14.5\,\text{kcal/mol}$). Validated across an empirical database of 10,000 stratified candidates spanning 24 disease indications, our framework establishes discrete algebraic topology as an exact organizing science for de novo drug design.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\include{chapters/ch1_introduction}
+\include{chapters/ch2_related_work}
+\include{chapters/ch3_language_design}
+\include{chapters/ch4_type_system}
+\include{chapters/ch5_implementation}
+\include{chapters/ch6_evaluation}
+\include{chapters/ch7_conclusion}
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

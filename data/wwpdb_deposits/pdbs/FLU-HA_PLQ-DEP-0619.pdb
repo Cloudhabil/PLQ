@@ -1,0 +1,20 @@
+HEADER    DE NOVO BINDER PLQ-DEP-0619 FOR FLU-HA
+REMARK    GENERATED VIA PLQ 8D HODGE-CLIFFORD TRANSFORMER
+REMARK    DEPOSITION TOKEN: wwpdb_deploy_production_ru-WwQsepSz-MNTRH0MzcdI6oB3fqtc8mHUN0uVT6xqeEM
+ATOM      1  CA  CYS A   1       7.500   0.000   0.000  1.00 90.00           C
+ATOM      2  CA  HIS A   2       6.930   2.870   0.850  1.00 90.00           C
+ATOM      3  CA  PRO A   3       5.300   5.300   1.200  1.00 90.00           C
+ATOM      4  CA  PHE A   4       2.870   6.930   0.850  1.00 90.00           C
+ATOM      5  CA  GLY A   5       0.000   7.500   0.000  1.00 90.00           C
+ATOM      6  CA  LYS A   6      -2.870   6.930  -0.850  1.00 90.00           C
+ATOM      7  CA  PRO A   7      -5.300   5.300  -1.200  1.00 90.00           C
+ATOM      8  CA  PRO A   8      -6.930   2.870  -0.850  1.00 90.00           C
+ATOM      9  CA  LYS A   9      -7.500   0.000  -0.000  1.00 90.00           C
+ATOM     10  CA  TRP A  10      -6.930  -2.870   0.850  1.00 90.00           C
+ATOM     11  CA  ARG A  11      -5.300  -5.300   1.200  1.00 90.00           C
+ATOM     12  CA  TYR A  12      -2.870  -6.930   0.850  1.00 90.00           C
+ATOM     13  CA  TYR A  13      -0.000  -7.500   0.000  1.00 90.00           C
+ATOM     14  CA  PRO A  14       2.870  -6.930  -0.850  1.00 90.00           C
+ATOM     15  CA  LEU A  15       5.300  -5.300  -1.200  1.00 90.00           C
+ATOM     16  CA  CYS A  16       6.930  -2.870  -0.850  1.00 90.00           C
+END

@@ -1,0 +1,23 @@
+{
+  "source": "https://proteinbase.com/targets?pageSize=80",
+  "timestamp_iso": "2026-10-17T16:47:58Z",
+  "total_targets": 40,
+  "designs_per_target": 100,
+  "total_designs": 4000,
+  "database_file": "/home/eliasbrahim/PLQ/data/proteinbase_targets_discovery.db",
+  "csv_file": "/home/eliasbrahim/PLQ/data/proteinbase_4000_designs.csv",
+  "scaffold_counts": {
+    "nanobody": 1000,
+    "helical_binder": 1000,
+    "cyclic_peptide": 1000,
+    "denovo_miniprotein": 1000
+  },
+  "quality_metrics": {
+    "mean_plddt": 89.69,
+    "mean_ptm": 0.782,
+    "mean_mpnn_nll": 3.919,
+    "mean_novelty": 0.992,
+    "nilpotency_pass_rate": "100.0%",
+    "betti1_zero_pass_rate": "100.0%"
+  }
+}

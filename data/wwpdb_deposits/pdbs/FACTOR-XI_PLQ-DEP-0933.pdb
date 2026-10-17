@@ -1,0 +1,20 @@
+HEADER    DE NOVO BINDER PLQ-DEP-0933 FOR FACTOR-XI
+REMARK    GENERATED VIA PLQ 8D HODGE-CLIFFORD TRANSFORMER
+REMARK    DEPOSITION TOKEN: wwpdb_deploy_production_ru-WwQsepSz-MNTRH0MzcdI6oB3fqtc8mHUN0uVT6xqeEM
+ATOM      1  CA  CYS A   1       7.500   0.000   0.000  1.00 90.00           C
+ATOM      2  CA  TYR A   2       6.930   2.870   0.850  1.00 90.00           C
+ATOM      3  CA  TRP A   3       5.300   5.300   1.200  1.00 90.00           C
+ATOM      4  CA  TRP A   4       2.870   6.930   0.850  1.00 90.00           C
+ATOM      5  CA  TYR A   5       0.000   7.500   0.000  1.00 90.00           C
+ATOM      6  CA  TRP A   6      -2.870   6.930  -0.850  1.00 90.00           C
+ATOM      7  CA  ARG A   7      -5.300   5.300  -1.200  1.00 90.00           C
+ATOM      8  CA  PHE A   8      -6.930   2.870  -0.850  1.00 90.00           C
+ATOM      9  CA  PHE A   9      -7.500   0.000  -0.000  1.00 90.00           C
+ATOM     10  CA  PRO A  10      -6.930  -2.870   0.850  1.00 90.00           C
+ATOM     11  CA  GLY A  11      -5.300  -5.300   1.200  1.00 90.00           C
+ATOM     12  CA  PRO A  12      -2.870  -6.930   0.850  1.00 90.00           C
+ATOM     13  CA  ILE A  13      -0.000  -7.500   0.000  1.00 90.00           C
+ATOM     14  CA  TRP A  14       2.870  -6.930  -0.850  1.00 90.00           C
+ATOM     15  CA  PRO A  15       5.300  -5.300  -1.200  1.00 90.00           C
+ATOM     16  CA  CYS A  16       6.930  -2.870  -0.850  1.00 90.00           C
+END

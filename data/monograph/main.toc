@@ -1,0 +1,147 @@
+\contentsline {chapter}{\numberline {1}Introduction and Motivation}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}The Foundational Dilemma in De Novo Biologics Design}{5}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}The Biologics Novelty Ceiling and Framework Entrapment}{5}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}The Continuous Energy Function and Heuristic Sampling Flaw}{6}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}The Coordinate Translation and Rotational Frustration Penalty}{6}{subsection.1.1.3}%
+\contentsline {section}{\numberline {1.2}Systems Rationale: The Six Foundational Inquiries}{6}{section.1.2}%
+\contentsline {section}{\numberline {1.3}The Paradigm of Topological Mechanics}{8}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Binding Interfaces as Directed Acyclic Cell Complexes (DACC)}{8}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Continuous Algebraic Layer: Clifford Sheaves and Versors}{8}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Combinatorial Hodge Theory and the Harmonic Interface Operator}{9}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}Ternary Lattice Quantization of Electrostatic States}{9}{subsection.1.3.4}%
+\contentsline {section}{\numberline {1.4}The Core Thesis of This Monograph}{10}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Core Contributions of This Monograph}{10}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Monograph Organization}{11}{section.1.6}%
+\contentsline {chapter}{\numberline {2}Related Work and Literature Taxonomies}{12}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction and Taxonomical Scope}{12}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Sequence-Based Generative Models and Evolutionary Language Models}{13}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}The Autoregressive and Masked Token Modeling Paradigm}{13}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}The Topological Blindness of Sequence Models}{13}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Continuous Geometric Diffusion and Coordinate-Based Hallucination}{13}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Denoising Score Matching over $\mathbb {R}^3 \times \mathrm {SO}(3)$}{13}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Failure Modes in Interfacial Topology and Commutativity}{14}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Canonical Antibody Engineering and Germline Loop Entrapment}{14}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}The Immunoglobulin Architecture and Chothia Canonical Classes}{14}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}The Topological Handle Index and Sequence Entrapment}{15}{subsection.2.4.2}%
+\contentsline {section}{\numberline {2.5}Topological Data Analysis in Structural Biology: Descriptive versus Generative}{15}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Point-Cloud Persistent Homology and Vietoris-Rips Complexes}{15}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Recent Advances: Persistent Hodge Laplacians}{16}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}The Critical Paradigm Shift: Post-Hoc Descriptive vs.\ Compile-Time Generative}{16}{subsection.2.5.3}%
+\contentsline {section}{\numberline {2.6}Geometric Algebra and Coordinate-Free Mechanics in Molecular Modeling}{16}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Foundations of Clifford Algebras in Physical Kinematics}{16}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Integration with Cellular Sheaves in Topological Mechanics}{17}{subsection.2.6.2}%
+\contentsline {section}{\numberline {2.7}Comparative Synthesis and Master Taxonomy}{17}{section.2.7}%
+\contentsline {chapter}{\numberline {3}Language Design and Epitope Specifications}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Design Philosophy and Developer Ergonomics}{19}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}The Developer Mental Model: From Coordinate Sampling to Cellular Contracts}{20}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Grammar and Concrete Syntax Specification}{20}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}EBNF Grammar}{20}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}The Multi-Stage Compilation Pipeline}{21}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Detailed Architectural Stages}{21}{subsection.3.3.1}%
+\contentsline {section}{\numberline {3.4}Canonical Cellular Epitope Contracts}{22}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Contract 1: Trimeric Human TNF-$\alpha $ Epitope Complex}{23}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Contract 2: Epidermal Growth Factor Receptor (EGFR) Domain III Complex}{24}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Contract 3: Cross-Species Interspecies Polypharmacology}{25}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Diagnostic Feedback and Compile-Time Verification}{25}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Diagnostic Example: Boundary Nilpotency Violation ($\partial ^2 \ne 0$)}{25}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Diagnostic Example: Topological Handle Warning ($\beta _1 \ge 1$)}{26}{subsection.3.5.2}%
+\contentsline {chapter}{\numberline {4}Type System and Formal Mathematical Foundations}{27}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction to the Formal Engine}{27}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Discrete Algebraic-Topological Foundations}{27}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Graded Directed Acyclic Cell Complexes}{27}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Boundary Homomorphisms and Incidence Matrices}{28}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Continuous Clifford-Algebraic Foundations}{29}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Construction of Clifford Algebras}{29}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}3D Projective Geometric Algebra ($\mathbb {R}^{3,0,1}= \mathbb {R}^{3,0,1}$)}{30}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}3D Conformal Geometric Algebra ($\mathbb {R}^{4,1,0}= \mathbb {R}^{4,1,0}$)}{30}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Cellular Sheaves of Clifford Algebras over DACCs}{30}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Combinatorial Hodge Theory on Molecular Interfaces}{31}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Formal Type System and Operational Semantics}{32}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Typing Judgements}{32}{subsection.4.6.1}%
+\contentsline {section}{\numberline {4.7}Mechanized-Grade Mathematical Proofs of the Core Theorems}{32}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Proof of Theorem 1: The Nilpotent Realizability Principle}{33}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Proof of Theorem 2: The Topological Novelty Principle}{34}{subsection.4.7.2}%
+\contentsline {subsection}{\numberline {4.7.3}Proof of Theorem 3: The Target Invariance Law}{35}{subsection.4.7.3}%
+\contentsline {subsection}{\numberline {4.7.4}Proof of Theorem 4: The Critical Histidine Percolation Threshold}{35}{subsection.4.7.4}%
+\contentsline {subsection}{\numberline {4.7.5}Proof of Theorem 5: The Shannon Entropy Paradox}{37}{subsection.4.7.5}%
+\contentsline {subsection}{\numberline {4.7.6}Proof of Theorem 6: Druggability Genus and Universal Euler Invariant}{37}{subsection.4.7.6}%
+\contentsline {subsection}{\numberline {4.7.7}Proof of Theorem 7: Clifford Sheaf Frustration-Free Docking}{38}{subsection.4.7.7}%
+\contentsline {subsection}{\numberline {4.7.8}Proof of Theorem 8: Sheaf-Theoretic Interspecies Cross-Reactivity}{39}{subsection.4.7.8}%
+\contentsline {subsection}{\numberline {4.7.9}Proof of Theorem 9: Constructive Kan Mutational Fibrations}{40}{subsection.4.7.9}%
+\contentsline {section}{\numberline {4.8}Summary of the Formal Engine}{40}{section.4.8}%
+\contentsline {chapter}{\numberline {5}Implementation and High-Performance Solvers}{41}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Overview of the Implementation Architecture}{41}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Cache-Line Aligned Cell Complex Memory Layout}{42}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Formal Memory Model of the DACC}{42}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Three-Tier Array Layout}{42}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Exact Block-CSR Representation of Boundary Operators}{43}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Sparsity Structure of Incidence Matrices}{43}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}The Exact Down-Laplacian Without Intermediate 1-Cell Storage}{44}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Building the Full Hodge Laplacian in Block-CSR}{44}{subsection.5.3.3}%
+\contentsline {section}{\numberline {5.4}Nil\-po\-ten\-cy-Preserving Dual-Tier Lock-Free Scheduler}{45}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Motivation: Concurrent DACC Updates Under Invariant Constraints}{45}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Tier 1: Lock-Free Task Queue}{45}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Tier 2: Cache-Line Atomic Block Updates}{46}{subsection.5.4.3}%
+\contentsline {section}{\numberline {5.5}Compiler Pipeline: From \textbf {ToposLang}{} Source to Candidate Sequences}{48}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Overview of the Four-Stage Lowering Architecture}{48}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Intermediate Representations}{48}{subsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.5.3}Static Nilpotency Verification Algorithm}{49}{subsection.5.5.3}%
+\contentsline {section}{\numberline {5.6}OCI Containerisation and Reproducible Deployment}{49}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Reproducibility as a Scientific Requirement}{49}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Multi-Stage Build Architecture}{50}{subsection.5.6.2}%
+\contentsline {subsection}{\numberline {5.6.3}Runtime Flags and Hardware Configuration}{50}{subsection.5.6.3}%
+\contentsline {section}{\numberline {5.7}Performance Benchmarks and Empirical Validation}{51}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Benchmark Setup}{51}{subsection.5.7.1}%
+\contentsline {subsection}{\numberline {5.7.2}Scalability Analysis}{51}{subsection.5.7.2}%
+\contentsline {subsection}{\numberline {5.7.3}Correctness Verification}{52}{subsection.5.7.3}%
+\contentsline {section}{\numberline {5.8}Summary and Outlook}{52}{section.5.8}%
+\contentsline {chapter}{\numberline {6}Empirical Evaluation and Multi-Target Benchmark}{54}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Overview and Evaluation Philosophy}{54}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Database Architecture and Stratification Design}{54}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Database Schema}{54}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Stratification of the 10,000-Candidate Corpus}{55}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}DACC Pocket Topology of the 24 Target Epitopes}{55}{subsection.6.2.3}%
+\contentsline {section}{\numberline {6.3}Empirical Validation of the Nilpotent Realizability Principle}{55}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Theorem 1 Revisited: Foldability as a Topological Predicate}{55}{subsection.6.3.1}%
+\contentsline {section}{\numberline {6.4}Empirical Validation of the Topological Novelty Principle}{57}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Global Betti Number -- Sequence Identity Relationship}{57}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Head-to-Head Comparison: Simply Connected vs.\ Loop-Bearing}{57}{subsection.6.4.2}%
+\contentsline {section}{\numberline {6.5}Empirical Validation of the Target Invariance Law}{58}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Cross-Disease-Area Analysis}{58}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}Per-Target Breakdown}{58}{subsection.6.5.2}%
+\contentsline {section}{\numberline {6.6}Empirical Validation of the Homological Phase Transition}{59}{section.6.6}%
+\contentsline {subsection}{\numberline {6.6.1}The Critical Histidine Percolation Threshold}{59}{subsection.6.6.1}%
+\contentsline {section}{\numberline {6.7}Empirical Validation of the Shannon Entropy Paradox}{60}{section.6.7}%
+\contentsline {subsection}{\numberline {6.7.1}Theorem 5: Structured Novelty vs.\ Stochastic Randomness}{60}{subsection.6.7.1}%
+\contentsline {section}{\numberline {6.8}Independent Topological Cross-Validation}{61}{section.6.8}%
+\contentsline {subsection}{\numberline {6.8.1}Agreement Between \textbf {PLQ}{}, GUDHI, and Ripser}{61}{subsection.6.8.1}%
+\contentsline {section}{\numberline {6.9}Falsification Audit and Control Analysis}{61}{section.6.9}%
+\contentsline {subsection}{\numberline {6.9.1}Four Mechanistic Control Groups}{61}{subsection.6.9.1}%
+\contentsline {section}{\numberline {6.10}The Universal Euler Characteristic and Druggability Genus}{62}{section.6.10}%
+\contentsline {section}{\numberline {6.11}Synthesis: Quantitative Summary of All Nine Theorems}{62}{section.6.11}%
+\contentsline {section}{\numberline {6.12}Summary and Transition to Chapter~\ref {ch:conclusion}}{63}{section.6.12}%
+\contentsline {chapter}{\numberline {7}Discussion, Experimental SOPs, and Conclusion}{64}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Discussion: Biophysical Implications of the Framework}{64}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}From Correlate to Causal Determinant}{64}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Comparison with Classical Paradigms}{64}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}Homological Phase Transitions as a Unifying Principle}{65}{subsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.1.4}Sheaf-Theoretic Docking and Allosteric Coherence}{65}{subsection.7.1.4}%
+\contentsline {section}{\numberline {7.2}Discussion: Limitations and Boundary Conditions}{66}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}The $5\,\text {\r A}$ Contact Cutoff}{66}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}$\beta _2 > 0$: Volumetric Pockets}{66}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}In Silico to In Vitro Gap}{66}{subsection.7.2.3}%
+\contentsline {subsection}{\numberline {7.2.4}Structural Quality and PDB Dependence}{67}{subsection.7.2.4}%
+\contentsline {section}{\numberline {7.3}Standard Operating Procedures for Wet-Lab Validation}{67}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}SOP-1: Surface Plasmon Resonance --- Binding Kinetics and pH Switching}{67}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}SOP-2: Circular Dichroism --- Secondary Structure Verification}{68}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}SOP-3: Differential Scanning Fluorimetry --- Thermal Stability at Multiple pH Values}{69}{subsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.3.4}SOP-4: Cryo-Electron Microscopy --- Structural Validation of the DACC Prediction}{70}{subsection.7.3.4}%
+\contentsline {section}{\numberline {7.4}Open Problems in Topological Protein Design}{71}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Higher Betti Numbers: $\beta _2$ and Volumetric Pocket Design}{71}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}$\beta _3$ and Knotted Proteins}{72}{subsection.7.4.2}%
+\contentsline {subsection}{\numberline {7.4.3}Sheaf Cohomology for Allosteric Network Design}{72}{subsection.7.4.3}%
+\contentsline {subsection}{\numberline {7.4.4}GPU Acceleration of the Hodge Laplacian Pipeline}{72}{subsection.7.4.4}%
+\contentsline {section}{\numberline {7.5}Conclusion}{73}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}Synthesis of the Nine Theorems}{73}{subsection.7.5.1}%
+\contentsline {subsection}{\numberline {7.5.2}The Paradigm Shift}{73}{subsection.7.5.2}%
+\contentsline {subsection}{\numberline {7.5.3}Forward-Looking Statement}{74}{subsection.7.5.3}%

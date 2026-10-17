@@ -1,0 +1,12 @@
+services:
+  plq-engine:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cloudhabil/plq:2.5.0
+    container_name: plq-engine
+    volumes:
+      - .:/app/PLQ
+      - ./workspace:/workspace
+    working_dir: /workspace
+    command: ["run-phases"]
