@@ -58,6 +58,7 @@ class DeNovoObjectiveWeights:
     w_pi: float = 0.5
     w_mw: float = 0.01
     w_topo: float = 0.05
+    w_wave_solv: float = 0.0
 
 
 
@@ -76,6 +77,7 @@ class DeNovoLossBreakdown:
     loss_pi: float
     loss_mw: float
     loss_topo: float
+    loss_wave_solv: float = 0.0
 
 
 @dataclass
@@ -666,6 +668,41 @@ class DeNovoGenerativeOptimizer:
                             grad_x[i][1] += scale_topo * dy
                             grad_x[i][2] += scale_topo * dz
 
+            # (G) Wave Sheaf Solvation & Hydrophobic Attractor Loss (Theorem 8.1)
+            l_wave_solv = 0.0
+            if self.weights.w_wave_solv > 0:
+                from plq.metrics.solvation_entropy import DynamicSolvationEntropy
+                se_engine = DynamicSolvationEntropy()
+                # Expected hydrophobic fraction phi from sequence probabilities
+                hydrophobic_set = {"A", "V", "I", "L", "M", "F", "W", "Y"}
+                hyd_mask = [1.0 if aa in hydrophobic_set else 0.0 for aa in CANONICAL_AA]
+                phi_vals = [
+                    sum(probs[i][k] * hyd_mask[k] for k in range(num_aa))
+                    for i in range(n)
+                ]
+                phi_mean = max(0.01, min(0.95, sum(phi_vals) / max(1, n)))
+                # Potential V(phi) shifted so V(phi* = 0.2788) == 0.0
+                v_min = se_engine.hydrophobic_potential(0.2788)
+                v_phi = se_engine.hydrophobic_potential(phi_mean) - v_min
+                # Analytical derivative dV/dphi = -alpha + 2*beta*phi + kappa/(1-phi)
+                dv_dphi = -2.3658 + 6.0 * phi_mean + 0.5 / (1.0 - phi_mean)
+                # Campbell solvation entropy across residue radii from centroid
+                cx = sum(coords[i][0] for i in range(n)) / max(1, n)
+                cy = sum(coords[i][1] for i in range(n)) / max(1, n)
+                cz = sum(coords[i][2] for i in range(n)) / max(1, n)
+                r_interface = [
+                    max(2.5, math.sqrt((coords[i][0] - cx) ** 2 + (coords[i][1] - cy) ** 2 + (coords[i][2] - cz) ** 2))
+                    for i in range(n)
+                ]
+                solv_res = se_engine.compute(r_interface[:8], t=1.0)
+                l_wave_solv = max(0.0, v_phi) + 0.1 * solv_res.t_ds_solv_total
+                total_loss += self.weights.w_wave_solv * l_wave_solv
+
+                # Backpropagate dV/dz_{i,k} = (dV/dphi) * (1 / (N * tau)) * pi_{i,k} * (hyd_mask[k] - phi_i)
+                scale_ws = self.weights.w_wave_solv * dv_dphi / (max(1, n) * max(1e-4, curr_tau))
+                for i in range(n):
+                    for k in range(num_aa):
+                        grad_z[i][k] += scale_ws * probs[i][k] * (hyd_mask[k] - phi_vals[i])
 
             loss_history.append(round(total_loss, 4))
             last_breakdown = DeNovoLossBreakdown(
@@ -681,6 +718,7 @@ class DeNovoGenerativeOptimizer:
                 loss_pi=round(l_pi, 4),
                 loss_mw=round(l_mw, 4),
                 loss_topo=round(l_topo, 4),
+                loss_wave_solv=round(l_wave_solv, 4),
             )
 
             # Gradient update: Sequence Logits z

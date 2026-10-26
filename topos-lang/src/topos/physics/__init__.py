@@ -32,4 +32,26 @@ __all__ = [
     "PeierlsVortexAnalyzer",
     "BakryEmeryCertificate",
     "BakryEmeryCurvatureEvaluator",
+    # --- Wave Sheaf Extension (Dynamic Spatial-Temporal Clifford Wave Sheaf S_W) ---
+    "CapillaryGravityDispersion",
+    "PoissonImpulseField",
+    "CampbellTheoremVariance",
+    "WavePhysicalConfig",
+    "PROTEIN_AQUEOUS_CONFIG",
+    "SOLID_STATE_METAMATERIAL_CONFIG",
+    "MACRO_FLUID_WATER_CONFIG",
+    "CausalGreensKernel",
+    "DispersiveWaveSheafDACC",
 ]
+
+# --- Wave Sheaf Extension imports (lazy to avoid circular deps) ---
+from topos.physics.dispersion import CapillaryGravityDispersion
+from topos.physics.poisson_forcing import PoissonImpulseField, CampbellTheoremVariance
+from topos.physics.wave_sheaf import (
+    WavePhysicalConfig,
+    PROTEIN_AQUEOUS_CONFIG,
+    SOLID_STATE_METAMATERIAL_CONFIG,
+    MACRO_FLUID_WATER_CONFIG,
+    CausalGreensKernel,
+    DispersiveWaveSheafDACC,
+)
